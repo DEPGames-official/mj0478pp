@@ -1,15 +1,19 @@
-#Remember from parcel (name of script) import Parcel (name of class in script)
-from parcel import Parcel
-
-#Main function used to start the process of running the code
+middayTemps = []
+midnightTemps = []
 def main():
-    #create new object called parcel1 from Parcel() class
-    parcel1 = Parcel()
-    #assigning a bool (true or false) variable called isValid when running is_valid function in Parcel class
-    isValid = parcel1.is_valid()
-    #printing the returned variable of isValid that was saved
-    print(isValid)
+
+    for x in range(30):
+        print(x + 1)
+        print(f"Type Midday Temp for day {x+1}")
+        print("Midday Temp: ")
+        middayTemp = input()
+        print("Midnight Temp: ")
+        midnightTemp = input()
+        middayTemps.append(middayTemp)
+        midnightTemps.append(midnightTemp)
+
+    print(len(middayTemps))
+    print(len(midnightTemps))
 
 
-#running the main() function which everything is in
 main()
